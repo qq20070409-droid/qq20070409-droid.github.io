@@ -8,3 +8,71 @@
     <p>网站已成功运行</p >
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFC 页面</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 500px;
+      padding: 40px;
+      border-radius: 20px;
+      background: #1e1e1e;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>欢迎</h1>
+    <p>
+      这是一个通过 NFC 标签打开的网站。<br>
+      你可以修改这里的文字、图片、按钮和功能。
+    </p>
+
+    <a class="btn" href="https://www.google.com" target="_blank">
+      打开链接
+    </a>
+  </div>
+</body>
+</html>
