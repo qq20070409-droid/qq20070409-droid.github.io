@@ -1,10 +1,82 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>个人名片</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      background: #f2f7fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      padding: 32px;
+      width: min(420px, 92vw);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #eaf1fb;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .title {
+      margin: 10px 0;
+      color: #5f7a9f;
+      font-weight: 500;
+    }
+
+    .description {
+      line-height: 1.7;
+      color: #475168;
+      margin: 16px 0;
+    }
+
+    .contact {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+      padding: 10px 16px;
+      border: 1px solid #d8e3f3;
+      border-radius: 999px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .contact a:hover {
+      background: #eef5ff;
+      transform: translateY(-1px);
+    }
+  </style>
 </head>
 <body>
   <main class="card">
@@ -24,77 +96,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-:root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  background: #f2f7fb;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  background: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-  padding: 32px;
-  width: min(420px, 92vw);
-  text-align: center;
-}
-
-.avatar {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #eaf1fb;
-  margin-bottom: 20px;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.title {
-  margin: 10px 0;
-  color: #5f7a9f;
-  font-weight: 500;
-}
-
-.description {
-  line-height: 1.7;
-  color: #475168;
-  margin: 16px 0;
-}
-
-.contact {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.contact a {
-  color: #1a73e8;
-  text-decoration: none;
-  padding: 10px 16px;
-  border: 1px solid #d8e3f3;
-  border-radius: 999px;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.contact a:hover {
-  background: #eef5ff;
-  transform: translateY(-1px);
-}
-<img src="images/profile.jpg" alt="头像" />
